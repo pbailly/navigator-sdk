@@ -66,6 +66,8 @@ public class CustomLineageCreator {
   }
 
   public void run() {
+    // register all models in example
+    plugin.registerModels(getClass().getPackage().getName());
     // Create the template
     StetsonScript script = createStetsonScript();
     // Create the instance

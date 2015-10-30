@@ -29,5 +29,7 @@ public @interface MProperty {
 
   String attribute() default "";
 
+  String fieldType() default "";
+
   boolean required() default false;
 }
